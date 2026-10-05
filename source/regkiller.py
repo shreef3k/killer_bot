@@ -35,7 +35,7 @@ client = gspread.authorize(creds)
 
 # Открытие Google таблиц
 try:
-    registrations_sheet = client.open('Регистрация на игру Киллер').sheet1
+    registrations_sheet = client.open('regkiller_test1').sheet1
     logger.info("✅ Таблица 'Регистрация на игру Киллер' найдена")
 except Exception as e:
     logger.error(f"❌ Таблица 'Регистрация на игру Киллер' не найдена: {e}")

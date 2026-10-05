@@ -26,7 +26,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name(GOOGLE_CREDENTIALS_FILE
 client = gspread.authorize(creds)
 
 # Открытие Google таблицы
-sheet = client.open("Игра в киллера").sheet1
+sheet = client.open("killer_test1").sheet1 # TODO
 
 # Инициализация бота и диспетчера
 bot = Bot(token=TELEGRAM_TOKEN)
